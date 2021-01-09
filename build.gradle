@@ -39,4 +39,5 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     // 템플릿 엔진 mustache
     compile('org.springframework.boot:spring-boot-starter-mustache')
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
 }
