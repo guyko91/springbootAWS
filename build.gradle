@@ -26,8 +26,17 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    // 스프링부트 web
     compile('org.springframework.boot:spring-boot-starter-web')
+    // 롬복 사용
+    compile('org.projectlombok:lombok')
+    annotationProcessor("org.projectlombok:lombok")
+    // Spring Data JPA
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    // h2 데이터베이스
+    compile('com.h2database:h2')
+    // 스프링부트 test
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    // 템플릿 엔진 mustache
+    compile('org.springframework.boot:spring-boot-starter-mustache')
 }
