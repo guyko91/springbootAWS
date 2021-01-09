@@ -39,5 +39,8 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     // 템플릿 엔진 mustache
     compile('org.springframework.boot:spring-boot-starter-mustache')
+    // 스프링 시큐리티 의존성 추가.
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    // jdbc세션 의존성 추가.
+    compile('org.springframework.session:spring-session-jdbc')
 }
